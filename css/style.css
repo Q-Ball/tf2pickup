@@ -1,0 +1,518 @@
+@font-face {font-family: "TF2 Build"; src: url('../fonts/tf2build.ttf');}
+@font-face {font-family: "TF2 Secondary"; src: url('../fonts/tf2secondary.ttf');}
+
+html, body {
+	margin: 0;
+	padding: 0;		
+	font-family: "TF2 Secondary", sans-serif;
+	font-size: 16px;
+}
+
+body { background: url("../images/background/gravelpit_3.png") 50% 0% no-repeat #7a7171; }
+
+.container {
+	width: 780px;
+	padding: 10px;
+	background-color: #1B1716;
+	margin: 50px auto 0px auto; /* top right bottom left */
+	box-shadow: 0 0 10px #000000;
+}
+
+.footer {
+	width: 780px;
+	padding: 0px 10px 10px 10px; /* top right bottom left */
+/*	color: #FBECCB;*/
+	color: #1B1716;
+	font-size: 12px;
+	margin-bottom: 32px;
+	text-align: center;
+/*	background-color: transparent;*/
+	margin: 0px auto 0px auto; /* top right bottom left */
+}
+
+.bookmark {
+	color: #FFF;
+}
+
+h1 {
+	background: #9E302F;
+	box-shadow: 0px 0px 10px #000000;
+	color: #FCFFF9;
+	font-family: "TF2 Build";
+	font-size: 34px;
+	height: 64px;
+	left: -30px;
+	margin: -30px 0px 0px;
+	padding: 30px 10px 0px 70px;
+	position: relative;
+	text-align: center;
+	width: 760px;
+	z-index: 10;
+}
+
+h2 {
+	position: relative;
+	left: -30px;
+	background: #385B77;
+	color: #FCFFF9;
+	padding: 10px 10px 10px 40px; /* top right bottom left */
+	width: 790px;
+	box-shadow: 0 0 10px #000000;	
+	font-family: "TF2 Build";	
+	font-size: 40px;
+	margin: 10px 0 0 0;
+	z-index: 10;
+}
+
+a {
+	color: #999;
+}
+
+p, dl {
+	display: block;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+
+#logo {
+	background-image: url("../images/lzlogo2.png");
+	background-position: 20px 50%;
+	background-repeat: no-repeat;
+}
+
+#lz-banner {
+	position: relative;
+	left: -20px;
+	top: -30px;
+/*	background: #385B77;*/
+	background: #FFA100;
+	color: #FCFFF9;
+	padding: 10px 10px 10px 40px; /* top right bottom left */
+	box-shadow: 0 0 10px #000000;	
+	font-family: "TF2 Build";
+	font-size: 20px;
+	width: 770px;
+	-webkit-transform:rotate(1deg);
+	-moz-transform:rotate(1deg);
+	-o-transform:rotate(1deg);
+	-ms-transform:rotate(1deg);
+	text-align:right;
+}
+
+#lz-banner a{
+	text-decoration: none;
+	color:#FFF;
+}
+
+#teams-wrapper {
+	/*font-family: "TF2 Build";
+	font-size: 18px;*/
+	/*display:inline-table;*/
+	display:table;
+	width:100%;
+	padding-left:10px;
+}
+#title-red, #title-blue  {color:#FBECCB;font-family:"TF2 Build";font-size: 18px;padding-bottom:10px;}
+
+#red, #redtwo {
+	background-color:#9E302F;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+}
+#blue, #bluetwo{
+	background-color: #385B77;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+}
+
+#red, #blue {
+	/*float:left;*/
+	/*display: inline-block;*/
+	display:table-cell;
+	*float: left;
+	text-align:center;
+	padding: 10px 20px 20px 20px; /* top right bottom left */
+	margin-right:20px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+#redtwo, #bluetwo {
+	display:table-cell;
+	*float: left;
+	text-align:center;
+	margin: 10px 0px 0px 0px; /* top right bottom left */
+	padding: 20px;
+	text-align: center;
+	width: 200px;
+}
+
+#redtwo #scout, #redtwo #soldier, #redtwo #pyro, #redtwo #demoman, #redtwo #heavy, #redtwo #engineer, #redtwo #medic, #redtwo #sniper, #redtwo #spy, #bluetwo #scout, #bluetwo #soldier, #bluetwo #pyro, #bluetwo #demoman, #bluetwo #heavy, #bluetwo #engineer, #bluetwo #medic, #bluetwo #sniper, #bluetwo #spy {
+	cursor:auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px 0 0 10px; /* top right bottom left */
+	border: 1px solid #FBECCB;
+	color:#FBECCB;
+}
+
+#redtwo #scout p, #redtwo #soldier p, #redtwo #pyro p, #redtwo #demoman p, #redtwo #heavy p, #redtwo #engineer p, #redtwo #medic p, #redtwo #sniper p, #redtwo #spy p, #bluetwo #scout p, #bluetwo #soldier p, #bluetwo #pyro p, #bluetwo #demoman p, #bluetwo #heavy p, #bluetwo #engineer p, #bluetwo #medic p, #bluetwo #sniper p, #bluetwo #spy p{
+	padding:0px;
+	margin:0px;
+}
+
+
+#teams-menu {
+	/*display: inline-block;*/
+	display:table-cell;
+	*float: left;
+	margin-left:10px;
+}
+
+#red p, #blue p{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-left: 51px;
+	padding-top: 0px;
+	text-align: left;
+	white-space: pre;
+	width: 160px;
+}
+
+#scout, #soldier, #pyro, #demoman, #heavy, #engineer, #medic, #sniper, #spy, #remove, #mapvote, #toogleready, #admin-remove, #admin-ban, #banbuttonok, #banbuttonclose, #reportplayer {
+	width:200px;
+	background-position: 5% 50%;
+	background-repeat: no-repeat;
+	text-align:center;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom:5px;
+	padding: 10px;
+	text-decoration: none;
+	cursor:pointer;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#scout, #soldier, #pyro, #demoman, #heavy, #engineer, #medic, #sniper, #spy { height:38px; }
+#remove, #mapvote, #toogleready, #admin-remove, #admin-ban, #banbuttonok, #banbuttonclose, #reportplayer { height:30px; }
+
+#scout {background-image:url('../images/icons/new/scout.png');}
+#soldier {background-image:url('../images/icons/new/soldier.png');}
+#pyro {background-image:url('../images/icons/new/pyro.png');}
+#demoman {background-image:url('../images/icons/new/demoman.png');}
+#heavy {background-image:url('../images/icons/new/heavy.png');}
+#engineer {background-image:url('../images/icons/new/engineer.png');}
+#medic {background-image:url('../images/icons/new/medic.png');}
+#sniper {background-image:url('../images/icons/new/sniper.png');}
+#spy {background-image:url('../images/icons/new/spy.png');}
+
+#teams-menu, #tf2chatloader, #admenu, #mapstatus {
+	text-align:center;
+}
+
+#admin-remove, #admin-ban {
+	margin-top:10px;
+	margin-right:10px;
+	display:inline-block;
+}
+
+#remove, #mapvote, #toogleready {
+/*	margin-top:10px;*/
+	display:inline-block;
+	margin-bottom:5px;
+}
+#readyimage {
+	background-repeat: no-repeat;
+	background-image:url('../images/icons/ready16_2.png');
+	height:32px;
+	width:32px;
+	margin-left: 180px;
+	margin-top: -8px;
+	position: absolute;
+	display: block;
+
+}
+
+.button, .button1 {background-color:#3C352F;color:#FBECCB;}
+.button-hover, .button1-hover {background-color:#FBECCB;color:#3C352F;}
+.button2-hover {background-color:#B4510E;}
+.button2-hover a {color:#FBECCB;}
+.button2 {background-color:#FBECCB;}
+.button2 a{color:#3C352F;}
+
+.button-status-remove {
+	cursor:pointer;
+	padding: 10px 0 0 10px; /* top right bottom left */
+	border: 1px solid #FBECCB;
+	color:#FBECCB;
+}
+
+.button-inv {
+	cursor:pointer;
+	padding: 10px 0 0 10px; /* top right bottom left */
+	border: 1px solid #FBECCB;
+	color:#FBECCB;
+}
+
+.class-profile {
+	color:#FBECCB;
+	font-size:10px;
+	margin-right: 54px;
+}
+
+#overlay_form {
+	position: absolute;
+	border: 5px solid gray;
+	padding: 10px;
+	background: white;
+	width: 200px;
+	height: 200px;
+	z-index: 9999;
+}
+
+#login {
+	text-align:center;
+	color: #FBECCB;
+/*	margin-top:10px;*/
+	margin-bottom:10px;
+	padding:20px;
+	background-color: #3C352F;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+/*
+	background-image: url("http://tf2lobby.com/img/bg_header.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #766860;
+*/
+}
+#logout {
+	height:25px;
+	width:100px;
+	text-align:center;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom:5px;
+	padding: 15px 10px 10px 10px;
+	cursor:pointer;
+	text-decoration:none;
+}
+#logout a {
+	text-decoration: none;
+}
+
+#loadchat, #added {
+	visibility:hidden;
+}
+
+#chat {
+	width:100%;
+	height:300px;
+}
+
+#tf2chat {
+	margin-bottom:20px;
+}
+
+#profile {
+	vertical-align:middle;
+	text-decoration: none;
+	display:inline-table;
+	width:100%;
+}
+
+#profile img{border: 1px solid #FBECCB;}
+
+#profile-left {
+	float:left;
+	font-size:16px;
+	display: inline-block;
+}
+
+#profile-right {
+	float:right;
+	font-size:16px;
+	display: inline-block;
+}
+
+#maps {
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	background-color: #3C352F;
+}
+#maps a{
+	color: #FBECCB;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight: bold;
+}
+#mapstatus, #map-info, #server-info, #mumble-info {
+	width: 210px;
+	min-height:160px;
+	background-color: #3C352F;
+	color: #FBECCB;
+	width:200px;
+	text-align:center;
+	border-radius: 5px;
+	margin-bottom:5px;
+	padding: 10px;
+	text-decoration: none;
+	margin-left:20px;
+	margin-top:5px;
+}
+#mapstatus p {
+	padding-bottom:0px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:0px;
+	padding-right:0px;
+	padding: 0 0 5px 0; /* top right bottom left */
+}
+
+.plist {
+	border-bottom:1px solid #FBECCB;
+}
+
+#warning {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 20px;
+	padding-top:0px;
+	background-color: #FBECCB;
+	color: #3C352F;
+	text-align:center;
+}
+
+#warning-close {
+	font-size: 24px;
+	position: relative;
+	color: #3C352F;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+	float:right;
+}
+
+#sublist {
+	margin-bottom: 10px;
+}
+
+.sub {
+	color:#FBECCB;
+	margin:5px;
+	background-position: 15px 50%;
+	background-repeat: no-repeat;
+	padding: 15px 5px 0px 60px;
+	height: 35px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor:pointer;
+	width:87%;
+}
+
+.red_scout {background-image:url('../images/icons/new/scout.png'); background-color:#9E302F;}
+.red_soldier {background-image:url('../images/icons/new/soldier.png'); background-color:#9E302F;}
+.red_pyro {background-image:url('../images/icons/new/pyro.png'); background-color:#9E302F;}
+.red_demoman {background-image:url('../images/icons/new/demoman.png'); background-color:#9E302F;}
+.red_heavy {background-image:url('../images/icons/new/heavy.png'); background-color:#9E302F;}
+.red_engineer {background-image:url('../images/icons/new/engineer.png'); background-color:#9E302F;}
+.red_medic {background-image:url('../images/icons/new/medic.png'); background-color:#9E302F;}
+.red_sniper {background-image:url('../images/icons/new/sniper.png'); background-color:#9E302F;}
+.red_spy {background-image:url('../images/icons/new/spy.png'); background-color:#9E302F;}
+
+.blue_scout {background-image:url('../images/icons/new/scout.png'); background-color:#385B77;}
+.blue_soldier {background-image:url('../images/icons/new/soldier.png'); background-color:#385B77;}
+.blue_pyro {background-image:url('../images/icons/new/pyro.png'); background-color:#385B77;}
+.blue_demoman {background-image:url('../images/icons/new/demoman.png'); background-color:#385B77;}
+.blue_heavy {background-image:url('../images/icons/new/heavy.png'); background-color:#385B77;}
+.blue_engineer {background-image:url('../images/icons/new/engineer.png'); background-color:#385B77;}
+.blue_medic {background-image:url('../images/icons/new/medic.png'); background-color:#385B77;}
+.blue_sniper {background-image:url('../images/icons/new/sniper.png'); background-color:#385B77;}
+.blue_spy {background-image:url('../images/icons/new/spy.png'); background-color:#385B77;}
+
+
+.reportbutton {background-image:url('../images/icons/report.png');}
+.reportbutton-hover {background-image:url('../images/icons/report_hover.png');}
+.reportbutton, .reportbutton-hover {
+	background-repeat: no-repeat;
+	width:32px;
+	height:32px;
+	margin-left: 160px;
+	margin-top: -21px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+}
+
+#infobox {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align:center;
+	background-color: #3C352F;
+	color: #FBECCB;
+	margin-bottom:10px;
+	padding: 10px 20px;
+}
+
+#myprofile {
+	color: #3C352F;
+	height:25px;
+	width:100px;
+	text-align:center;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom:5px;
+	padding: 15px 10px 10px 10px;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+#closesub {
+	background-image:url('../images/icons/closesub16.png');
+	background-repeat: no-repeat;
+	width:16px;
+	height:16px;
+	margin-left: 755px;
+	margin-top: -37px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+}
+
+#yes, #no {
+	background-color: #3C352F;
+	border: 1px solid #3C352F;
+	border-radius: 5px;
+	color: #FBECCB;
+	cursor: pointer;
+	padding: 10px;
+	font-size:18px;
+	font-family: "TF2 Secondary", sans-serif;
+}

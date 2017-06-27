@@ -1,0 +1,1 @@
+<?php // menu for adminsecho "<div class='button' data-reveal-id='myModal' id='admin-remove'>REMOVE PLAYER</div>";echo "<div class='button' data-reveal-id='myModal' id='admin-ban'>BAN PLAYER</div>";?>

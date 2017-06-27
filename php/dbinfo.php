@@ -1,0 +1,1 @@
+<?php // db connection info$dbhost = "HOST";$dbuser = "USER";$dbpass = "PASSWORD";$dbname = "DB";?>
